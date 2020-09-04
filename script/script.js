@@ -10,4 +10,16 @@ function closeForm() {
   document.getElementById("cntb").style.backgroundColor = "";
 }
 
+function t(){
 
+    var alldate = new Date();
+    var tim = alldate.toLocaleTimeString();
+    var day = alldate.getDate();
+    var month = alldate.getMonth()+1;
+    var year = alldate.getFullYear();
+    var ti = document.getElementById("time");
+    ti.innerHTML = day+ "/" + month + "/" + year + " . " +tim;
+}
+
+
+setInterval(t,100);
