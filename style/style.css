@@ -187,7 +187,6 @@ border-radius: 25px;
 }
 
 
-
 .skilldiv{
   animation:post 10s infinite;
 }
@@ -203,4 +202,12 @@ border-radius: 25px;
   40%{color:pink;}
   50%{color:red;}
   100%{color:black;}
+}
+
+
+#time{
+    font-family: 'Pacifico', cursive;
+    color:yellow;
+    font-size:20px;
+    padding-top:12px;
 }
