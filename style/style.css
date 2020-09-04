@@ -1,4 +1,7 @@
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif; 
+  
+
+}
 * {box-sizing: border-box;}
 /* ScrollBar */
 
@@ -12,7 +15,7 @@ body::-webkit-scrollbar-track{
 
 body::-webkit-scrollbar-thumb{
     background-color: black;
-    border-radius: 10px;
+    background-image: linear-gradient(-180deg,#f26db6, #007BFF);
 }
 
 body::-webkit-scrollbar-button{
@@ -25,7 +28,7 @@ body::-webkit-scrollbar-button:hover{
 }
 
 body::-webkit-scrollbar-thumb:hover{
-    background-color:blue;
+     background-image: linear-gradient(-180deg, #007BFF,#f26db6);
     border-radius: 15px;
 }
 
@@ -123,34 +126,45 @@ textarea{
 }
 
 .welcome{
-  height:260px;
-  border:12px solid black;
+  height:430px;
+  /* border:12px solid #007BFF; */
  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ,inset 0 0 10px #000000; */
   text-align: center;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   font-family:Times, "Times New Roman", serif;
-  box-shadow: 13px 13px 20px #cbced1,
-        -13px -13px 20px #ffffff;
+  /* box-shadow: 13px 13px 20px #cbced1, */
+        /* -13px -13px 20px #ffffff,inset 0 0 10px #f26db6; */
+  /* background-image: linear-gradient(180deg,#f26db6, #007BFF ); */
+  background-color: white;
 }
 
 
 #wel_txt{
-  margin-top: 30px;
+  margin-top: 100px;
+}
+
+#wel_txt h2:hover{
+    background: -webkit-linear-gradient(#007BFF,#f26db6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 #wel_txt h5{
   font-weight: bold;
-  font-size: 35px;
+  font-size: 40px;
 }
 
-#wel_txt h4{
-  color: blue;
+#wel_txt h2{
   font-weight: bold;
-  font-size: 50px;
+  font-size: 70px;
+  background: -webkit-linear-gradient(#f26db6, #007BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #wel_txt h6{
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .card{
@@ -163,6 +177,7 @@ textarea{
  border:12px solid red;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),inset 0 0 10px #000000;
 border-radius: 25px;
+ background-image: linear-gradient(-180deg,#f26db6, #007BFF);
 }
 
 .digree_ico{
@@ -179,11 +194,28 @@ border-radius: 25px;
    color: white;
    text-align: center;
    padding:5px;
+   background-image: linear-gradient(-180deg, #007BFF, #f26db6);
+}
+
+.footer:hover{
+  background-image: linear-gradient(-180deg, #f26db6, #007BFF);
 }
 
 .navbar-light{
   color: red;
   font-size: 20px;
+}
+
+.navbar{
+   background-image: linear-gradient(-180deg, #007BFF,#f26db6);
+}
+
+.navbar:hover{
+   background-image: linear-gradient(-180deg,#f26db6, #007BFF);
+}
+
+.menucolor{
+  color: 
 }
 
 
