@@ -18,7 +18,7 @@ function t(){
     var month = alldate.getMonth()+1;
     var year = alldate.getFullYear();
     var ti = document.getElementById("time");
-    ti.innerHTML = day+ "/" + month + "/" + year + " . " +tim;
+    ti.innerHTML = day+ "/" + month + "/" + year + " . " +tim+ " ";
 }
 
 
