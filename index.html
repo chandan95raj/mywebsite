@@ -1,247 +1,171 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-	<title>CodesWithChandan</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	<noscript>
-		<h1>Please enable JavaScript</h1>
-		<style>
-		body{
-			background:black;
-		}
-		h1{
-			font-size: 100px;
-			text-align:center;
-			color:white;
-			font-family:sans-serif;
-		}
-		#webpage{display:none;}
-		</style>
-	</noscript>
-
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/animate.css">
-	<link href="style/text.css" rel="stylesheet">
-	<link rel="icon" type="image/png" href="images/logo.png" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="script/jquery-3.5.1.slim.min.js"></script>
-	<script src="script/popper.min.js"></script>
-	<link rel="stylesheet" href="style/bootstrap.min.css">
-	<script src="script/bootstrap.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177336480-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-177336480-1');
-</script>
-
+  <title>CodesWithChandan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <noscript>
+    <h1>Please enable JavaScript</h1>
+    <style>
+    body{
+      background:black;
+    }
+    h1{
+      font-size: 100px;
+      text-align:center;
+      color:white;
+      font-family:sans-serif;
+    }
+    #webpage{display:none;}
+    </style>
+  </noscript>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/animate.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body >
-<div class="mainmenu">
-		<nav class="navbar navbar-expand-lg navbar-light  shadow-lg">
-			<a href="#" class="navbar-brand" style="color:white;font-size:20px;text-shadow:2px 2px 8px #000000;">Chandan Raj</a>
-            
-			<button class=" navbar-toggler" data-toggle="collapse" data-target="#open-menu">
-			<span class="navbar-toggler-icon"></span>
-			</button>
 
-			<div class="collapse navbar-collapse text-center" id="open-menu">
-			<ul class="nav nav-tabs navbar-nav ml-auto">
-                <li class="nav-item"><h4  id="time"></h4></li>
-				<li class="nav-item"><a href="#" class="nav-link "></a></li>
-                <li class="nav-item  font-weight-bold"><a href="#" class="nav-link active">Home</a></li>
-				<li class="nav-item  font-weight-bold"><a href="https://www.youtube.com/channel/UC5merbkF3NASi0Mi7e-ytWA" target="_blank" class="nav-link text-danger font-weight-bold animated flash infinite">Youtube</a></li>
-				<li class="nav-item font-weight-bold"><a href="https://github.com/codeswithchandan?tab=repositories" target="_blank" class="nav-link">Projects</a></li>
-				<li class="nav-item  font-weight-bold"><a href="about.html" class="nav-link">About</a></li>
-				<li class="nav-item  font-weight-bold" ><a href="#"  onclick="openForm()" id="cntb" class="nav-link ">Contact</a></li>
-			</ul>
-			</div>
-		</nav>
-	</div>
-		
-		<div class="container-fluid">		
-				<div class="form-popup mt-5" id="myForm">
-				<form action="mailto:codeswithchandan@gmail.com" class="form-container" method="post" enctype="text/plain">
+<body class="w3-light-grey">
 
-				<i class="fa fa-close" style="float:right;color:white;font-size:20px;background-color:red;padding:5px;cursor:pointer;border-radius:3px;"  onclick="closeForm()"></i>
-				<h1>Send MSG</h1>
+<div class="topnav" id="myTopnav">
+  <a class="navbar-brand" href="#" style="color:white;font-size:20px;text-shadow:2px 2px 8px #000000;">Chandan Raj</a>
+  <a href="#home" class="active">Home</a>
+  <a href="https://www.youtube.com/channel/UC5merbkF3NASi0Mi7e-ytWA" target="_blank" class="animated flash infinite">YouTube</a>
+  <a href="https://github.com/codeswithchandan?tab=repositories" target="_blank">Project</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-				<input type="text" placeholder="Enter Name" name="name" required>
+  
 
-				<input type="email" placeholder="Enter Email" name="email" required>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-				<textarea type="text" name="Message" placeholder="Write Your Message Here..." required></textarea>
-
-				<button type="submit" class="btn">Send</button>
-				<input type="reset" value="Reset">
-				</form>
-				</div>
-            </div>
-
-			<div class="container">
-				<div class="row welcome">
-					<div class="offset-sm-1 pt-5 col-md-4 col-xs-12  animated slideInDown" >
-						<div id="wel_txt" class=" animated backInDown ">
-						<h5 class="animated flip">Hey,</h5>
-						<h2 class="animated headShake infinite">I'm Chandan </h2>
-						<h6 class="animated pulse infinite">welcome !</h6>
-						</div>
-					</div>	
-
-                    <div class="pt-5 col-md-6 col-xs-12 " >  
-                        <img  src="images/cmp1.png" alt="cmp" width="100%" height="350px" />
-                    </div>  
-				</div>
-
-        <h1 class="text-center text-heading skilldiv" style="font-weight: medium; font-family: 'Pacifico', cursive;" id="intro">Introduction</h1>
-        <hr style="width: 20%;" class="pb-4">
-
-        <div class="row">
-
-            <div class="col-md-3 col-xs-12 mb-3 animated slideInLeft">
-                 <div class="card box_shadow">
-                    <div class="card-icon text-center effect pt-3">
-                        <i class="fa fa-graduation-cap  pt-4" style="font-size:30px;" ></i>
-                    </div>
-                    <div class="card-body text-center pb-3">
-                        <div class="card-title animated pulse infinite"  style="font-size: 4vh;color:blue;">MCA (PG)</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">Magadh University,<br>Bodhgaya <br>[2018-2021] </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-12 mb-3 animated slideInLeft">
-                <div class="card box_shadow">
-                    <div class="card-icon text-center effect pt-3">
-                        <i class="fa fa-institution  pt-4" style="font-size:30px;"></i>
-                    </div>
-                    <div class="card-body text-center pb-3">
-                        <div class="card-title animated pulse infinite" style="font-size: 4vh;color:blue;">Graduation (UG)</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">VK Singh University,<br> Ara <br>[2013-2016] </p>
-                    </div>
-                </div>
-           </div>
-
-           <div class="col-md-3 col-xs-12 mb-3 animated slideInRight">
-                <div class="card box_shadow">
-                    <div class="card-icon text-center effect pt-3">
-                        <i class="fa fa-book pt-4" style="font-size:30px;"></i>
-                    </div>
-                    <div class="card-body text-center pb-3">
-                        <div class="card-title animated pulse infinite" style="font-size: 4vh;color:blue;">Higher Secondary</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">BSEB, <br> Patna <br>[2011-2013] </p>
-                    </div>
-                </div>
-       		</div>
-
-       		<div class="col-md-3 col-xs-12 mb-3 animated slideInRight">
-                <div class="card box_shadow">
-                    <div class="card-icon text-center effect pt-3">
-                        <i class="fa fa-book pt-4" style="font-size:30px;"></i>
-                    </div>
-                    <div class="card-body text-center pb-3">
-                        <div class="card-title animated pulse infinite" style="font-size: 4vh;color:blue;">Secondary</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">BSEB, <br> Patna <br>[2010-2011] </p>
-                    </div>
-                </div>
-       		</div>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
     
-
-
-<div class="container pt-5 pb-5">
-        <h1 class="text-center text-heading" style="font-weight: medium; font-family: 'Pacifico', cursive;" id="intro">Latest <i class="text-danger">YouTube</i> Video</h1>
-         <hr width="30%" size="20" color="red" noshade> 
-
-				<div class="row pt-3">
-					<div class="offset-md-4 col-md-4 col-xs-12" id="yout">
-						<iframe width="100%" height="235" src="https://www.youtube.com/embed/qdZgBrZJ5k4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>	
-				<div class="row">
-					<div class="offset-md-4 col-md-4 col-xs-12 ">
-						<a href="https://www.youtube.com/channel/UC5merbkF3NASi0Mi7e-ytWA" target="_blank"> <h2 class="text-right text-danger out font-italic ">More Videos...</h2></a>
-					</div>
-				</div>
-</div>
-<div class="container">
-        <h1 class="text-center text-heading skilldiv" style="font-weight: medium; font-family: 'Pacifico', cursive;" id="intro">Skills!</h1>
-        <hr style="width: 7%;" color="blue" >
-
-        <div class="row pt-3">
-
-            <div class="col-md-3 col-xs-12 mb-3 animated slideInLeft">
-                 <div class="card box_shadow rounded-circle">
-                    <div class="card-body text-center mt-4 pb-4  ">
-                        <div class="card-title animated pulse infinite"  style="font-size:3vh;color:blue;">Web Development & <br> Languages</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">HTML,CSS,JS <br>Bootstrap<br>PHP, C, C++... </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-12 mb-3 animated slideInLeft">
-                <div class="card box_shadow rounded-circle">
-                    <div class="card-body text-center mt-4 pb-3">
-                        <div class="card-title animated pulse infinite" style="font-size: 4vh;color:blue;">MS Office</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">MS Word,<br> MS Excel,<br> MS Access, <br>MS Powerpoint... </p>
-                    </div>
-                </div>
-           </div>
-
-           <div class="col-md-3 col-xs-12 mb-3 animated slideInRight">
-                <div class="card box_shadow rounded-circle">
-                    <div class="card-body text-center mt-4 pb-3">
-                        <div class="card-title animated pulse infinite" style="font-size: 4vh;color:blue;">Technical Tools</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size:3vh;">Adobe Photoshop, <br>Visual Studio, <br>Filmora <br>Camtesia...  </p>
-                    </div>
-                </div>
-       		</div>
-
-       		<div class="col-md-3 col-xs-12 mb-3 animated slideInRight">
-                <div class="card box_shadow rounded-circle">
-                    <div class="card-body text-center mt-4 pb-5">
-                        <div class="card-title animated pulse infinite" style="font-size: 3vh;color:blue;">Other Technical Degree</div>
-                        <hr style="width: 20%; margin-top: 0; padding-top: 0;">
-                        <p style="font-size: 3vh;">ITI, <br> NCVT <br>[2016-2018] </p>
-                    </div>
-                </div>
-       		</div>
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/chandan2.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 style="color:#009688;text-shadow:2px 2px 2px #000000;">Chandan Raj</h2>
+          </div>
         </div>
-</div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Designer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>India</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>codeswithchandan@gmail.com</p>
+          <hr>
 
-<div class="container mt-5">
-        <h1 class="text-center text-heading skilldiv" style="font-weight: medium; font-family: 'Pacifico', cursive;" id="intro">Projects!</h1>
-        <hr style="width: 7%;" color="blue" >
-
-        <div class="row pt-3 mb-5">
-        	<div class="col offset-md-4 col-md-4 text-center">
-        		<button class="btn btn-secondary"><a href="https://github.com/codeswithchandan?tab=repositories" target="_blank" class="nav-link" style="color:white;">Click here for Projects</a></button>
-        	</div>
-		</div>
-</div>
-
-            <div class="card container mt-5  mb-5 col-md-5 animated slideInLeft" style=" background-image: linear-gradient(-180deg,#f26db6, #007BFF);">
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item">Pursuing MCA from Magadh University, Hobby Doing coding, having knowledge of JS, jQuery, PHP, PYTHON, DJANGO, MySQL, MongoDB(NoSQL), HTML Bootstrap</li>
-                </ul>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>HTML</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
             </div>
-		
-		<div class="footer card-title bg-primary animated slideInUp">
-			<p class="pt-3">This Site is Developed By : Chandan Raj  </p>
-		</div>
+          </div>
+          <p>JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+          </div>
+          <p>Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
+          </div>
+          <br>
 
-	</div>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>Hindi</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Front End Developer / algopanda.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>I have been selected as web developer at ALGOPANDA TECHNOLOGIES, after a great interview.</p>
+          <hr>
+        </div>
+      </div>  
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Magadh University</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018-2021</h6>
+          <p>Master in Computer Application (PG)</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>VK Singh University,Ara</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2016</h6>
+          <p>Bachelor Degree (UG)</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>BSEB, Patna</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2013</h6>
+          <p>Higher Secondary</p><br>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>BSEB, Patna</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2011</h6>
+          <p>Secondary</p><br>
+        </div>
+      </div>
+
+          <div class="w3-container w3-card w3-white w3-margin-bottom w3-margin-top">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-youtube fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Latest Youtube Video</h2>
+        <div class="w3-container">
+           <div>
+            <iframe width="50%" height="150" src="https://www.youtube.com/embed/qdZgBrZJ5k4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a href="https://www.youtube.com/channel/UC5merbkF3NASi0Mi7e-ytWA" target="_blank" class="w3-tag w3-teal w3-round ytube animated pulse infinite">More Videos....</a>
+          <hr>
+        </div>
+      </div> 
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+  <div class="footer">
+		<p>Designed & Developed By : Chandan Raj</p>
+  </div>
 <script src="script/script.js"></script>
 </body>
 </html>
