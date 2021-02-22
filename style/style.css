@@ -3,10 +3,15 @@ html {
 scroll-behavior: smooth;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+  padding:0;
+  margin: 0;
+}
+
 .topnav {
   overflow: hidden;
   background: rgb(32,189,140);
-background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%);
+  background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%);
 }
 
 
@@ -36,6 +41,8 @@ background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%
 .topnav .icon {
   display: none;
 }
+
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -69,7 +76,7 @@ background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%
    height: 4em;
    letter-spacing: 1px;
    background: rgb(32,189,140);
-background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%);
+   background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%);
    color: white;
    padding-top: 10px;
    text-align: center;
@@ -79,11 +86,18 @@ background: linear-gradient(90deg, rgba(32,189,140,1) 20%, rgba(0,254,175,1) 61%
 }
 
 @media screen and (max-width: 600px){
-  iframe,.myApp img{
+  iframe{
     width: 100%;
     height: 150px;
   }
   .ytube{
   width: 100%;
 }
+  .myApp img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+
 }
